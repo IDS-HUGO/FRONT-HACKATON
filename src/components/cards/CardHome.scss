@@ -1,0 +1,89 @@
+// Variables de estilo
+$background-color: #f2f2f2;
+$card-border-color: #ccc;
+$text-color: #333;
+$primary-color: #000;
+$button-bg-color: #323232;
+$button-text-color: #fff;
+$button-hover-bg-color: lighten($button-bg-color, 10%);
+$card-shadow-color: rgba(0, 0, 0, 0.1);
+
+.card-home {
+  background-color: $background-color;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px $card-shadow-color;
+  max-width: 350px;
+  margin: 16px auto;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .company-info {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: $text-color;
+      margin: 0;
+    }
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    color: $primary-color;
+    padding: 0 12px;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    color: $text-color;
+    line-height: 1.6;
+    padding: 0 12px 16px 12px;
+    flex-grow: 1;
+  }
+
+  .donate-button {
+    background-color: $button-bg-color;
+    color: $button-text-color;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+    width: 100%;
+    text-transform: uppercase;
+
+    img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-left: 8px;
+    }
+
+    &:hover {
+      background-color: $button-hover-bg-color;
+    }
+  }
+}
